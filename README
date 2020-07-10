@@ -1,0 +1,7 @@
+The community repository for GKISS Linux.
+
+GKISS Linux community repos will not accept any packages which work on KISS Linux. These packages should be added to the KISS Linux community repo. Packages should only be added to this here if they require glibc to function.
+
+All builds for FOSS software should be in the gcommunity directory while all propietary software builds must be placed in the propietary directory.
+
+For more information on how to add packages check out the KISS Linux community repos. (https://github.com/kisslinux/community)
