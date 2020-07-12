@@ -1,0 +1,4 @@
+atk
+at-spi2-core
+meson   make
+samurai make

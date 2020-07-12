@@ -1,0 +1,27 @@
+#!/bin/sh -e
+
+tar xf "download?platform=linux&format=tar.gz"
+cd Discord
+
+mkdir -p "$1/opt/discord"
+cp -r Discord \
+    chrome-sandbox \
+    chrome_100_percent.pak \
+    chrome_200_percent.pak \
+    icudtl.dat \
+    libEGL.so \
+    libGLESv2.so \
+    libffmpeg.so \
+    locales \
+    natives_blob.bin \
+    resources \
+    resources.pak \
+    snapshot_blob.bin \
+    swiftshader \
+    v8_context_snapshot.bin \
+    "$1/opt/discord"
+
+chmod 4755 "$1/opt/discord/chrome-sandbox"
+
+mkdir -p "$1/usr/bin"
+ln -s "/opt/discord/Discord" "$1/usr/bin/discord"

@@ -1,0 +1,7 @@
+atk-bridge
+libXcomposite
+nss
+gdk-pixbuf
+gtk+3
+libnotify
+dbus

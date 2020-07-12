@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+mkdir build
+cd build
+
+meson \
+    --prefix="$1/usr" \
+    --sysconfdir="$1/etc" ..
+
+ninja
+ninja install

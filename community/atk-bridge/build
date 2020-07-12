@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+export CFLAGS="$CFLAGS -I/usr/include/at-spi-2.0/"
+
+meson --prefix="$1/usr" _build .
+cd _build
+
+ninja
+ninja install
