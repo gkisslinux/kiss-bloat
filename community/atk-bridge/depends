@@ -1,4 +1,5 @@
 atk
 at-spi2-core
+libxml2
 meson   make
 samurai make
