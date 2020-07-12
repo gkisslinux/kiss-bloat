@@ -2,6 +2,6 @@ The community repository for GNU KISS Linux.
 
 GKISS Linux community repos will not accept any package builds which function on KISS Linux. These packages should be added to the KISS Linux community repo.
 
-All builds or binaries for FOSS software should be located in the gcommunity directory while all propietary software builds or binaries must be placed in the propietary directory.
+All builds here should be for free open source software.
 
 For more information about contribution guidelines visit https://depsterr.com/gkiss
