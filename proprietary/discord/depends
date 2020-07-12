@@ -1,5 +1,8 @@
 atk-bridge
+alsa-lib
+cups
 libXcomposite
+libXScrnSaver
 nss
 gdk-pixbuf
 gtk+3
