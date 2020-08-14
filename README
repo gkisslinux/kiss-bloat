@@ -1,14 +1,1 @@
-The community repository for GNU KISS Linux.
-
-GKISS Linux community repos will not accept any package builds which function on KISS Linux. These packages should be added to the KISS Linux community repo.
-
-All builds in the community directory should be for free open source software.
-
-Non FOSS builds should be placed in the proprietary subdirectory.
-
-Unlike KISS we permit packages such as dbus to be packaged here, HOWEVER, this is mainly meant to satisfy dependencies for proprietary applications. Please exclude dbus from your builds if possible. If you're including it then please reason as to why you're doing so.
-
-For more information about contribution guidelines visit https://depsterr.com/gkiss
-
-Thanks to @periish who's builds have been imported to this repository.
-Thanks to @aosync who's builds have been imported to this repository.
+GKISS IS NO LONGER MAINTAINED, IF YOU WISH TO MAINTAIN GKISS CONTACT ME AT depsterr at protonmail dot com
