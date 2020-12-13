@@ -1,10 +1,10 @@
-atk-bridge
 alsa-lib
+atk-bridge
 cups
-libXcomposite
-libXScrnSaver
-nss
+dbus
 gdk-pixbuf
 gtk+3
+libXScrnSaver
+libXcomposite
 libnotify
-dbus
+nss
