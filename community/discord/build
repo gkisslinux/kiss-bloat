@@ -13,7 +13,6 @@ cp -r Discord \
     libGLESv2.so \
     libffmpeg.so \
     locales \
-    natives_blob.bin \
     resources \
     resources.pak \
     snapshot_blob.bin \
