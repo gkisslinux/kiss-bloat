@@ -2,8 +2,10 @@
 
 ./configure \
     --prefix=/usr \
+    --libexecdir=/usr/lib \
     --localstatedir=/var \
     --sysconfdir=/etc \
+    --with-udev-rules-dir=/usr/lib/udev/rules.d \
     --disable-openssl \
     --without-caps \
     --disable-x11 \
