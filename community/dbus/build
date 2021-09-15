@@ -1,11 +1,12 @@
 #!/bin/sh -e
 
 ./configure \
+    --prefix=/usr \
+    --libexecdir=/usr/lib \
     --sysconfdir=/etc \
     --localstatedir=/var \
     --enable-user-session \
     --disable-asserts \
-    --prefix=/usr \
     --without-x \
     --with-system-socket=/run/dbus/system_bus_socket \
     --disable-doxygen-docs \
