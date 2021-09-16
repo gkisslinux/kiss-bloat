@@ -1,34 +1,17 @@
 #!/bin/sh -e
 
-./configure \
+export DESTDIR="$1"
+
+meson \
     --prefix=/usr \
     --libexecdir=/usr/lib \
-    --localstatedir=/var \
-    --sysconfdir=/etc \
-    --with-udev-rules-dir=/usr/lib/udev/rules.d \
-    --disable-openssl \
-    --without-caps \
-    --disable-x11 \
-    --disable-systemd-daemon \
-    --disable-bluez5 \
-    --disable-jack \
-    --disable-avahi \
-    --disable-gsettings \
-    --disable-gtk3 \
-    --disable-solaris \
-    --disable-tests \
-    --disable-nls \
-    --disable-dbus \
-    --disable-systemd-login \
-    --disable-gstreamer \
-    --disable-bluez5-ofono-headset \
-    --disable-esound \
-    --disable-oss-output \
-    --disable-oss-wrapper \
-    --disable-tcpwrap \
-    --disable-manpages \
-    --disable-lirc
+    -Ddatabase=simple \
+    -Dgtk=disabled \
+    -Dx11=disabled \
+    -Ddoxygen=false \
+    -Dtests=false \
+    -Dman=false \
+    . output
 
-# We disable the manpages, as they require a perl module.
-make
-make DESTDIR="$1" install
+ninja -C output
+ninja -C output install
